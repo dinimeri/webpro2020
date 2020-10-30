@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <div>
+            <label for="tanggal">DATE</label>
+            <input type="date" name="tanggal" id="tanggal">
+        </div>
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <div>
+                <label for="nama">NAME</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div>
+                <label for="ttl">DATE OF BIRTH</label>
+                <input type="date" name="ttl" id="ttl">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>CONTACT INFORMATION</legend>
+            <label for="alamat">ADDRESS</label>
+            <input type="text" name="alamat" id="alamat">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="kota">CITY</label>
+                            <input type="text" name="kota" id="kota">
+                            <label for="prov">PROVINCE/STATE</label>
+                            <input type="text" name="prov" id="prov">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pos">ZIP CODE</label>
+                            <input type="text" name="pos" id="pos">
+                            <label for="negara">COUNTRY</label>
+                            <input type="text" name="negara" id="negara">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telp">PHONE</label>
+                            <input type="text" name="telp" id="telp">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <label for="member">MEMBERSHIP TYPE</label>
+                <input type="radio" name="member" id="member" value="regular" />Regular
+                <input type="radio" name="member" id="member" value="Premium" />Premium
+                <input type="radio" name="member" id="member" value="vip"  />VIP
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>COURSE INFORMATION</legend>
+            <div>
+                <label for="nama_mk">COURSE NAME</label>
+                <input type="text" name="nama_mk" id="nama_mk">
+            </div>
+            <div>    
+                <label for="payment">PAYMENT DETAILS</label>
+                <input type="radio" name="payment" id="payment" value="card" checked />Card
+                <input type="radio" name="payment" id="payment" value="cek" checked />Cheque
+                <input type="radio" name="payment" id="payment" value="cc" checked />Credit Card
+            </div>
+            <div>
+                <label for="komen">COMMENTS</label>
+                <textarea name="komen" id="komen" cols="30" rows="2"></textarea>
+            </div>    
+        </fieldset>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <textarea name="sign" id="sign" cols="30" rows="5" placeholder="STUDENT'S SIGNATURE"></textarea>
+                        <textarea name="validated" id="sign" cols="30" rows="5" placeholder="VALIDATED BY"></textarea>                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <input type="submit" name="submit" id="submit">
+        </div>
+    </form>
+</body>
+</html>
