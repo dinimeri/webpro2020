@@ -1,0 +1,259 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f1f1f1;
+}
+
+.feature ul li{
+  padding: 20px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+  color: white;
+  height: 60px;
+  justify-content: space-around;
+}
+
+nav .brand{
+  padding: 10px 15px 10px 40px;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  color: white;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: #3498db;
+}
+
+.show-menu .hide-menu{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu{
+  float: right;
+}
+.show-menu i{
+  line-height: 100px;
+}
+
+nav a:hover 
+.show:hover 
+.hide:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.jumbotron{
+  background-image: url(assets/imgs/apart.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 320px;
+  margin-top: -70px;
+  font-size: 25px;
+}
+
+.jumbotron p{
+  font-size: 15px;
+} 
+
+.container{
+  width: 100%;
+  margin: 20px auto;
+}
+
+.heading{
+  text-align: center;
+}
+
+.heading h1{
+  display: inline-flex;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+  
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+  
+.card{
+  width: 45%;
+  text-align: center;
+  padding: 200px 10px;
+  background-image: url(assets/imgs/apart2.jpg);
+  background-size: cover;
+  color: #fff;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+  
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+
+.facilities{
+  text-align: center;
+}
+
+.facilities h1{
+  display: inline-flex;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+.facility-cont{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.facility{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.facility:hover{
+  background: #ddd;
+}
+
+.facility i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.facility h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+.facility p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.about-cont{
+  text-align: center;
+}
+
+.about-cont h1{
+  display: inline-flex;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+.about-cont p{
+  margin-top: 20px;
+  font-size: 17px;
+  padding-left: 100px;
+  padding-right: 100px;
+} 
+
+footer{
+  margin-top: 70px;
+  padding: 20px;
+  color: white;
+  background-color: #393b44;
+  text-align: center;
+}
+
+@media screen and (max-width:576px) {
+  .show-menu .hide-menu{
+    display: block;
+  }
+  
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  
+  nav ul a{
+    display: block;
+    padding: 20px;
+  }
+  
+  .hide-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  
+  #chk:checked ~ nav ul{
+    right: 0;
+  }
+
+  .jumbotron{
+    padding: 250px 100px;
+    background-size: cover;
+  }
+
+  .card{
+    width: 90%;
+  }
+
+  .facility{
+    width: 100%;
+  }
+
+  footer{
+    font-size: 12px;
+  }
+}
